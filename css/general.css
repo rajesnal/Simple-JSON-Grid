@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	resize:none;
+}
+body {	
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+    font-size: 1em;
+}
+.clear {
+	clear: both;
+}
+#wrapper {
+	display:block;
+    padding: 0 0 60px 0;
+    max-width: 1024px;
+    min-width: 1024px;
+    overflow: hidden;
+    margin: 0;    
+    position: relative;
+}
+#header {
+	display:block;
+	height: 55px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	padding: 20px 0 0 0;
+	min-width: 1024px;
+}
+#content {	
+	display: block; 
+	min-width: 1024px;
+}
+button {
+    display: inline-block;
+    background: #82B311;
+    -webkit-box-shadow: 0px 3px 0px 0px #6C940D, 0px -1px 0px 0px #9cd418 inset, 0px 2px 5px 0px #858585;
+    -moz-box-shadow: 0px 3px 0px 0px #6C940D, 0px -1px 0px 0px #9cd418 inset, 0px 2px 5px 0px #858585;
+    box-shadow: 0px 3px 0px 0px #6C940D, 0px -1px 0px 0px #9cd418 inset, 0px 2px 5px 0px #858585;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0s 0;
+    -moz-transition: all 0s 0;
+    -o-transition: all 0s 0;
+    transition: all 0s 0;
+    text-shadow: 0px -1px 0px #6C940D;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    border-color: #6C940D;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 100;
+    font-style: normal;
+}
+button:hover {
+    background: #398fa1;
+    -webkit-box-shadow: 0px 3px 0px 0px #316396, 0px -1px 0px 0px #41c0ad inset, 0px 2px 5px 0px #858585;
+    -moz-box-shadow: 0px 3px 0px 0px #316396, 0px -1px 0px 0px #41c0ad inset, 0px 2px 5px 0px #858585;
+    box-shadow: 0px 3px 0px 0px #316396, 0px -1px 0px 0px #41c0ad inset, 0px 2px 5px 0px #858585;
+    text-shadow: 0px -1px 0px #316496;
+    border-color: #316496;
+}
+button:active {
+    background: #398fa1;
+    -webkit-box-shadow: 0px 1px 0px 0px #316396, 0px -1px 0px 0px #41c0ad inset;
+    -moz-box-shadow: 0px 1px 0px 0px #316396, 0px -1px 0px 0px #41c0ad inset;
+    box-shadow: 0px 1px 0px 0px #316396, 0px -1px 0px 0px #41c0ad inset;
+    text-shadow: 0px -1px 0px #316496;
+    margin: 7px 0px 3px 0px;
+    border-color: #316496;
+}
+.dbColEntry {
+    display: block;
+    float: left;
+    margin: 3px 5px 0 0;
+    overflow: hidden;
+    padding: 0 0 5px;
+    position: relative;
+    width: 970px;
+}
+.dbColLabel {
+	background-color: #FFDB70;
+    border: 1px solid #F5B800;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 7px 5px 0;
+    overflow: hidden;
+    padding: 5px 3px 5px 10px;
+    position: relative;
+}
+.selectCtl {
+	border: 2px solid #F5B800;
+    display: block;
+    float: left;
+    margin: 6px 10px 0 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.dbInputHold {
+	display: block;
+    float: left;
+    margin: 3px 0 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 680px;
+    text-align: left;
+    border: 2px solid #F5B800;
+    padding: 20px;
+    border-radius: 5px;
+}
+.dbInputCtl {
+	border: 2px solid #F5B800;
+    display: block;
+    float: left;
+    margin: 6px 10px 0 0;
+    padding: 5px;
+    width: 185px;
+    border-radius: 5px;
+}

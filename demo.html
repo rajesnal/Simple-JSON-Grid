@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Jquery HtmlTable Test Page</title>
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+<script src="jquery.htmltable-1.0.min.js" type="text/javascript"></script>
+<script src="js/general.js" type="text/javascript"></script>
+<link href="jquery.htmltable-1.0.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+<link href="css/general.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#tabs").tabs();
+		$("#tableHoldCtl").hide();
+		$("#TableEditable").click(function() {
+			var prop = $(this).prop('checked');
+			if(prop){
+				$("#ColoumnSorting").prop('checked',false);
+				$("#ShiftSelectFlag").prop('checked',false);
+			} 
+		});
+		$("#ColoumnSorting").click(function() {
+			var prop = $(this).prop('checked');
+			if(prop){
+				$("#TableEditable").prop('checked',false);
+			} 
+		});
+		$("#ShiftSelectFlag").click(function() {
+			var prop = $(this).prop('checked');
+			if(prop){
+				$("#TableEditable").prop('checked',false);
+			} 
+		});
+	});
+</script>
+</head>
+<body>
+<center>
+	<div id="wrapper">
+		<div id="header">
+			<h2>JQuery HTML Table Demo page</h2>			
+		</div>
+		<div id="content">
+			<div id="tabs" style="font-size:11px;">
+				<ul>					
+					<li><a href="#parameterTab">Parameters</a></li>
+					<li><a href="#resultsTab">Results</a></li>
+					<li><a href="#docmentationTab">How To</a></li>
+				</ul>
+				<div id="parameterTab">
+					<h3>Table Properties</h3>
+					<p>Select the properties below and click on 'Create Table' button. to create a table with the given options.</p>
+					<br style="clear:both;"/>
+					<div id="tableBuilderElements">
+						<div class='dbColEntry'>
+							<span class='dbColLabel'>IndexColoumn <input type="checkbox" id="IndexColoumn"/></span>
+							<span class='dbColLabel'>CheckBoxColoumn <input type="checkbox" id="CheckBoxColoumn"/></span>
+							<span class='dbColLabel'>ColoumnSorting <input type="checkbox" id="ColoumnSorting"/></span>
+							<span class='dbColLabel'>ShiftSelectFlag <input type="checkbox" id="ShiftSelectFlag"/></span>
+							<span class='dbColLabel'>TableEditable <input type="checkbox" id="TableEditable"/></span>
+							<span class='dbColLabel'>SearchEnableFlag <input type="checkbox" id="SearchEnableFlag"/></span>
+							<span class='dbColLabel'>ThemePrefix</span>
+							<select class="selectCtl" id="ThemePrefix">
+								<option>theme1</option>
+								<option>theme2</option>
+								<option>theme3</option>
+							</select>
+							<span class='dbColLabel'>DefaultDisplayRowCount</span>
+							<select class="selectCtl" id="DefaultDisplayRowCount">
+								<option>--</option>
+								<option>5</option>
+								<option>10</option>
+								<option>15</option>
+								<option>20</option>
+								<option>25</option>
+								<option>30</option>
+								<option>45</option>
+								<option>50</option>
+							</select>
+							<span class='dbColLabel'>PerPageRowCount</span>
+							<select class="selectCtl" id="PerPageRowCount">
+								<option>--</option>
+								<option>25</option>
+								<option>50</option>
+								<option>100</option>
+							</select>
+							<span class='dbColLabel'>MaxTableHeight</span>
+							<select class="selectCtl" id="MaxTableHeight">
+								<option>--</option>
+								<option>100</option>
+								<option>200</option>
+								<option>300</option>
+							</select>
+						</div>
+						<div class='dbColEntry'>
+							<span class='dbColLabel'>MappingWithJson</span>
+							<div class="dbInputHold">
+								<span style="float:left;"> [ </span><br class="clear"/>								
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col1", HeaderLabel : "</span>
+									<input type="text" value="Coloumn1Coloumn1" class="dbInputCtl" id="col1Header" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;">", IsEditable :</span>
+									<select class="selectCtl" id="col1editflag" style="width:60px;margin:0;padding:0;">
+										<option>true</option>
+										<option>false</option>
+									</select>
+									<span style="float:left;margin-left:5px;"> },</span>
+								</div><br class="clear"/>
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col2", HeaderLabel : "</span>
+									<input type="text" value="Coloumn2Coloumn2" class="dbInputCtl" id="col2Header" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;">", IsEditable :</span>
+									<select class="selectCtl" id="col2editflag" style="width:60px;margin:0;padding:0;">
+										<option>true</option>
+										<option>false</option>
+									</select>
+									<span style="float:left;margin-left:5px;"> },</span>
+								</div><br class="clear"/>
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col3", HeaderLabel : "</span>
+									<input type="text" value="Coloumn3Coloumn3" class="dbInputCtl" id="col3Header" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;">", IsEditable :</span>
+									<select class="selectCtl" id="col3editflag" style="width:60px;margin:0;padding:0;">
+										<option>true</option>
+										<option>false</option>
+									</select>
+									<span style="float:left;margin-left:5px;"> },</span>
+								</div><br class="clear"/>
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col4", HeaderLabel : "</span>
+									<input type="text" value="Coloumn4Coloumn4" class="dbInputCtl" id="col4Header" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;">", IsEditable :</span>
+									<select class="selectCtl" id="col4editflag" style="width:60px;margin:0;padding:0;">
+										<option>true</option>
+										<option>false</option>
+									</select>
+									<span style="float:left;margin-left:5px;"> },</span>
+								</div><br class="clear"/>
+								<span style="float:left;"> ] </span>
+							</div>
+						</div>
+						<div class='dbColEntry'>
+							<span class='dbColLabel'>JSONArrayObject</span>
+							<div class="dbInputHold" style="height:53px;overflow:auto;">
+								[ <br/>
+			               		  &nbsp;&nbsp; { col1 : "data10", col2 : "data12", col3 : "data13", col4 : "data14"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data20", col2 : "data22", col3 : "data23", col4 : "data24"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data30", col2 : "data32", col3 : "data33", col4 : "data34"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data40", col2 : "data42", col3 : "data43", col4 : "data44"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data50", col2 : "data52", col3 : "data53", col4 : "data54"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data60", col2 : "data62", col3 : "data63", col4 : "data64"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data70", col2 : "data72", col3 : "data73", col4 : "data74"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data80", col2 : "data82", col3 : "data83", col4 : "data84"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data90", col2 : "data92", col3 : "data93", col4 : "data94"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data11", col2 : "data12", col3 : "data13", col4 : "data14"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data21", col2 : "data22", col3 : "data23", col4 : "data24"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data31", col2 : "data32", col3 : "data33", col4 : "data34"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data41", col2 : "data42", col3 : "data43", col4 : "data44"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data51", col2 : "data52", col3 : "data53", col4 : "data54"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data61", col2 : "data62", col3 : "data63", col4 : "data64"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data71", col2 : "data72", col3 : "data73", col4 : "data74"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data81", col2 : "data82", col3 : "data83", col4 : "data84"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data91", col2 : "data92", col3 : "data93", col4 : "data94"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data12", col2 : "data12", col3 : "data13", col4 : "data14"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data22", col2 : "data22", col3 : "data23", col4 : "data24"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data32", col2 : "data32", col3 : "data33", col4 : "data34"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data42", col2 : "data42", col3 : "data43", col4 : "data44"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data52", col2 : "data52", col3 : "data53", col4 : "data54"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data62", col2 : "data62", col3 : "data63", col4 : "data64"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data72", col2 : "data72", col3 : "data73", col4 : "data74"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data82", col2 : "data82", col3 : "data83", col4 : "data84"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data92", col2 : "data92", col3 : "data93", col4 : "data94"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data13", col2 : "data12", col3 : "data13", col4 : "data14"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data23", col2 : "data22", col3 : "data23", col4 : "data24"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data33", col2 : "data32", col3 : "data33", col4 : "data34"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data43", col2 : "data42", col3 : "data43", col4 : "data44"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data53", col2 : "data52", col3 : "data53", col4 : "data54"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data63", col2 : "data62", col3 : "data63", col4 : "data64"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data73", col2 : "data72", col3 : "data73", col4 : "data74"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data83", col2 : "data82", col3 : "data83", col4 : "data84"	}, <br/>
+			               		  &nbsp;&nbsp; { col1 : "data93", col2 : "data92", col3 : "data93", col4 : "data94"	}, <br/>
+			               		]
+							</div>
+						</div>
+						<br style="clear:both;"/>
+						<button style="float:right;" onClick="createTable();">Create Table</button>
+					</div>					
+					<br style="clear:both;"/>					
+				</div>
+				<div id="resultsTab">
+					<div id="tableHoldCtl">
+						<div id="resultsTable"></div>
+						<br style="clear:both;"/>
+						<br style="clear:both;"/>
+						<button style="float:left;" onClick="destroyTable();">Destroy Table</button>
+						<button style="float:left;margin-left:20px;" onClick="showSelectedRows();">Selected/Modified Rows</button>
+						<button style="float:left;margin-left:20px;" onClick="saveModifiedEntries();">Save Modified Rows</button>
+						<button style="float:left;margin-left:20px;" onClick="deleteEntries();">Delete Selected Rows</button>
+						<br style="clear:both;"/>
+						<br style="clear:both;"/>
+						<div class='dbColEntry'>
+							<span class='dbColLabel'>FooterShowing_Lbl</span>
+							<input type="text" value="Showing" class="dbInputCtl" id="FooterShowing_Lbl">
+							<span class='dbColLabel'>FooterSelected_Lbl</span>
+							<input type="text" value="Selected" class="dbInputCtl" id="FooterSelected_Lbl">
+						</div>
+						<div class='dbColEntry'>
+							<span class='dbColLabel'>FooterModified_Lbl</span>
+							<input type="text" value="Modified" class="dbInputCtl" id="FooterModified_Lbl">
+							<span class='dbColLabel'>FooterTotal_Lbl</span>
+							<input type="text" value="Total" class="dbInputCtl" id="FooterTotal_Lbl">
+						</div>
+						<div class='dbColEntry'>
+							<span class='dbColLabel'>ColHeader_Lbls</span>
+							<div class="dbInputHold">
+								<span style="float:left;"> [ </span><br class="clear"/>								
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col1", HeaderLabel : "</span>
+									<input type="text" value="Coloumn1Coloumn1" class="dbInputCtl" id="Headercol1" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;margin-left:5px;">" },</span>
+								</div><br class="clear"/>
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col2", HeaderLabel : "</span>
+									<input type="text" value="Coloumn2Coloumn2" class="dbInputCtl" id="Headercol2" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;margin-left:5px;">" },</span>
+								</div><br class="clear"/>
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col3", HeaderLabel : "</span>
+									<input type="text" value="Coloumn3Coloumn3" class="dbInputCtl" id="Headercol3" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;margin-left:5px;">" },</span>
+								</div><br class="clear"/>
+								<div style="flaot:left;margin:5px 0 0 10px;">
+									<span style="float:left;">{ MappedJsonVar : "col4", HeaderLabel : "</span>
+									<input type="text" value="Coloumn4Coloumn4" class="dbInputCtl" id="Headercol4" style="width:100px;margin:0 5px 0 5px;padding:0 5px 0 5px;">
+									<span style="float:left;margin-left:5px;">" },</span>
+								</div><br class="clear"/>
+								<span style="float:left;"> ] </span>
+							</div>
+						</div>
+						<button style="float:left;" onClick="updateTableLabels();">Update Table Labels</button>
+					</div>														
+					<br style="clear:both;"/>
+				</div>
+				<div id="docmentationTab">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</center>
+</body>
+</html>

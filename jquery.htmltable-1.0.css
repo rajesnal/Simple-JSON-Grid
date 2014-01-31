@@ -1,0 +1,377 @@
+/**
+ * Rajesh Kumar Nallabanda
+ * 
+ */
+.gridTable {
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:0px;
+	margin:0px;
+	display:block;
+	text-align:center;
+	font-size:11px;
+}
+.gridTable .gridTableHold {
+	float:left;
+	overflow:auto; position:relative; 
+	padding:0px;
+	margin:0px;
+	display:block;
+}
+.gridTable .gridTableHeader{
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:0px;
+	margin:0px;
+	display:block;
+	text-align:center;
+}
+.gridTable .gridTableHeaderSearchHold{
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:0px;
+	margin:3px;
+	display:block;
+	text-align:center;
+	background:none;
+	background-color: #FFFFFF;
+}
+.gridTable .gridsearchHeaderHold{
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:0;
+	margin:0;
+	display:block;
+	text-align:center;
+}
+.gridTable .gridTableHeaderSearchCount{
+	border-radius: 5px;
+    display: block;
+    float: right;
+    margin: 2px;
+    overflow: hidden;
+    padding: 2px 4px;
+    position: relative;
+    text-align: center;
+}
+.gridTable .gridSearchInput{
+	border: 0 none;
+    display: block;
+    float: left;
+    font-size: 11px;
+    margin: 3px;
+    overflow: hidden;
+    padding: 3px 5px;
+    position: relative;
+    text-align: left;
+    letter-spacing: 1px;
+    width:10px;
+}
+.gridTableHeaderCell{
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:2px 2px 0px 2px;
+	margin:0px;
+	display:block;
+	text-align:center;
+	cursor: pointer;
+	border-width: 0 0 0 1px;
+	z-index:0;
+}
+.gridTableHeaderSno {
+	width:18px;
+	min-width:18px;
+}
+.gridTableHeaderCb {
+	min-width:33px;
+}
+.gridTableHeaderCellLabel {
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:2px 2px 0px 2px;
+	margin:0px;
+	display:block;
+	text-align:center;
+	cursor: pointer;
+	min-width:12px;
+}
+.gridTableHeaderCellIconHold {
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:0px;
+	margin:1px 0px 0px 0px;
+	height:17px;
+	width:17px;
+	display:block;
+}
+.gridTableHeaderCellIcon{
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:0px;
+	margin:1px 0px 0px 0px;
+	height:17px;
+	width:17px;
+	display:none;
+}
+.gridIconHold {
+	display:block;
+	width:18px; 
+	height:18px; 
+	float:left; 
+	position:relative;
+}
+.gridHeaderCellSeperator {
+    cursor: col-resize;
+    display: block;
+    float: left;
+    height:24px;
+    margin: 0;
+    padding:0;
+    width: 1px;
+	border-width: 1px 1px 1px 1px;
+	border-style:dashed;
+	z-index:1;
+}
+.gridSelectAll {
+	float:left;
+	position:relative;
+	display:block;	
+	margin:3px 0px 0px 2px;
+}
+.gridTable .gridTableContents{
+	float:left;
+	overflow:auto; position:relative; 
+	padding:0px;
+	margin:0px;
+	display:block;
+	text-align:center;
+	font-weight:normal;
+}
+.gridTable .dataGridRow{
+	float:left;
+	overflow:hidden;
+	position:relative; 
+	padding:0px;
+	margin:0px;
+	display:block;
+	text-align:center;
+	font-weight:normal;
+	font-style:normal;
+}
+.dataGridRowCell{
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:4px 4px 4px 2px;
+	margin:0px 0px 0px 0px;
+	display:block;
+	cursor: default;
+}
+.inputCtrl {
+	float:left;
+	overflow: hidden; position:relative; 
+	margin:0px;
+	display:block;
+	width:96%;
+	font-size:11px;
+	text-align:center;
+}
+.dataGridRowSnoCell {
+    text-align:right;
+    min-width:18px;
+}
+.dataGridRowCbCell {
+    padding: 0 0 5px 5px;
+    text-align: left;
+}
+.dataGridRowCb {
+	margin:5px 0px 0px 0px;
+}
+.gridTable .gridTableFooter{
+	float:left;
+	overflow:auto; position:relative; 
+	padding:0px;
+	margin:0px;
+	display:block;
+	text-align:center;	
+	font-weight:normal;
+}
+.gridTableFooterNavHold {
+    display: block;
+    float: left;
+    height: 24px;
+    margin: 0 0 0 15px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+.gridTableFooterNavInfoHold {
+	display: block;
+    float: right;
+    height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding: 2px 15px 0 0;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+.gridTableFooterNavSelectHold {
+	float:left;
+	overflow: hidden;
+	position:relative; 
+	padding:0px 4px 0px 4px;
+	margin:2px;
+	height:20px;
+	display:block;
+	text-align:center;
+	border:1px dotted;
+	border-top:0px;
+	border-bottom:0px;
+}
+.gridTableFooterNavIcon {	
+	float:left;
+	position:relative;
+	padding:0px;
+	margin:2px;
+	width:20px;
+	height:17px;
+	display:block;
+	cursor: pointer;
+}
+.gridTableFooterPageCountSelectHold {
+	float:left;
+	overflow: hidden;
+	position:relative; 
+	padding:0px 4px 0px 4px;
+	margin:2px 15px 2px 15px;
+	height:20px;
+	display:block;
+	text-align:center;
+	border:1px dotted;
+	border-top:0px;
+	border-bottom:0px;
+}
+.footerPageDropDownHold, .footerPageCountDropDownHold {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size:11px;
+}
+.gridTableFooterEmpty {
+	border-style: dotted;
+    border-width: 0 1px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 18px;
+    margin: 1px 0 0 2px;
+    overflow: hidden;
+    padding: 2px 2px 0;
+    position: relative;
+    text-align: center;
+    width: 18px;
+}
+.ui-row-cell {
+	border-right:1px dotted;	
+}
+.ui-row-odd, .ui-row-even {
+	border:1px solid #EEEEEE;
+}
+/**** Theme 1 *****/
+.theme1-table-layout {
+	background-color: #FFFFFF;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	border-color: #EB8F00;
+    border-width: 1px;
+    border-style: solid;
+}
+.theme1-header-row {
+	display: inline-block;
+    background-color: #F6A828;
+    -webkit-box-shadow: 0px 1px 0px 0px #EB8F00, 0px -1px 0px 0px #F5B800 inset, 0px 2px 2px 0px #858585; 
+    -moz-box-shadow: 0px 1px 0px 0px #EB8F00, 0px -1px 0px 0px #F5B800 inset, 0px 2px 2px 0px #858585;
+    box-shadow: 0px 1px 0px 0px #EB8F00, 0px -1px 0px 0px #F5B800 inset, 0px 2px 2px 0px #858585;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0s 0;
+    -moz-transition: all 0s 0;
+    -o-transition: all 0s 0;
+    transition: all 0s 0;
+    text-shadow: 0px -1px 0px #EB8F00;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    border-color: #EB8F00;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+.theme1-search-hold {
+	border-radius: 5px;
+}
+.theme1-row-odd {
+	background-color: #FFDB70;
+	color: #000000;
+}
+.theme1-row-odd .theme1-row-cell{
+	border-right: 1px dotted #FFFFFF;	
+}
+.theme1-row-even {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.theme1-row-even .theme1-row-cell{
+	border-right: 1px dotted #FFDB70;	
+}
+.theme1-row-hover,.theme1-row-selected,.theme1-search-count {
+	background-color: #EB8F00;
+	color: #FFFFFF;
+}
+.theme1-footer-row {
+	display: inline-block;
+    background-color: #F6A828;
+    -webkit-box-shadow: 0px 1px 0px 0px #EB8F00, 0px -1px 0px 0px #F5B800 inset, 0px 2px 2px 0px #858585; 
+    -moz-box-shadow: 0px 1px 0px 0px #EB8F00, 0px -1px 0px 0px #F5B800 inset, 0px 2px 2px 0px #858585;
+    box-shadow: 0px 1px 0px 0px #EB8F00, 0px -1px 0px 0px #F5B800 inset, 0px 2px 2px 0px #858585;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0s 0;
+    -moz-transition: all 0s 0;
+    -o-transition: all 0s 0;
+    transition: all 0s 0;
+    text-shadow: 0px -1px 0px #EB8F00;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    border-color: #EB8F00;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+.theme1-icon {
+	background-image: url("gridIcons.png");
+	background-repeat: no-repeat;
+}
+.theme1-icon-seek-first {
+	background-position: -45px 6px;
+}
+.theme1-icon-seek-prev {
+	background-position: -13px 6px;
+}
+.theme1-icon-seek-next {
+	background-position: 3px 6px;
+}
+.theme1-icon-seek-end {
+	background-position: -29px 6px;
+}
+.theme1-icon-triangle-1-n {
+	background-position: -60px 6px;
+}
+.theme1-icon-triangle-1-s {
+	background-position: -72px 6px;
+}
