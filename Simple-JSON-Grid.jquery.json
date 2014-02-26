@@ -1,0 +1,36 @@
+{
+    "name": "Simple-JSON-Grid",
+    "title": "Simple JSON HTML Table Grid",
+    "description": "jQuery plugin to create a HTML Table grid from a simple JSON. This plugin has lot of features like Search-Box, Themes, Check-Box, Multi Select, Pagination.",
+    "keywords": [
+    	"Grid", 
+    	"Table", 
+    	"Table-Checkbox", 
+    	"Search", 
+    	"HTMLTable",
+        "Multi-Select"
+    ],
+    "version": "0.1.6",
+    "author": {
+        "name": "Rajesh Kumar Nallabanda"
+    },
+    "maintainers": [
+        {
+            "name": "Rajesh Kumar Nallabanda",
+            "email": "rajeshkumar.nallabanda@gmail.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/rajesnal/Simple-JSON-Grid/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/rajesnal/Simple-JSON-Grid/issues",
+    "homepage": "https://github.com/rajesnal/Simple-JSON-Grid/",
+    "docs": "https://github.com/rajesnal/Simple-JSON-Grid/wiki",
+    "download": "https://github.com/rajesnal/Simple-JSON-Grid/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.9"
+    }
+}
