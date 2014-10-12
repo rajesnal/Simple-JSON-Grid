@@ -18,6 +18,14 @@
 	margin:0px;
 	display:block;
 }
+.gridTable .gridTableHeaderHold {
+	float:left;
+	overflow: hidden; position:relative; 
+	padding:0px;
+	margin:0px;
+	display:block;
+	text-align:center;
+}
 .gridTable .gridTableHeader{
 	float:left;
 	overflow: hidden; position:relative; 
@@ -35,14 +43,6 @@
 	text-align:center;
 	background:none;
 	background-color: #FFFFFF;
-}
-.gridTable .gridsearchHeaderHold{
-	float:left;
-	overflow: hidden; position:relative; 
-	padding:0;
-	margin:0;
-	display:block;
-	text-align:center;
 }
 .gridTable .gridTableHeaderSearchCount{
 	border-radius: 5px;
@@ -75,15 +75,17 @@
 	display:block;
 	text-align:center;
 	cursor: pointer;
-	border-width: 0 0 0 1px;
-	z-index:0;
+	border-width: 1px 0 0 1px;
+	min-width:33px;
+}
+.gridTableHeaderEmpty {
+	cursor: pointer;
+	width:18px;
+	min-width:18px;
 }
 .gridTableHeaderSno {
 	width:18px;
 	min-width:18px;
-}
-.gridTableHeaderCb {
-	min-width:33px;
 }
 .gridTableHeaderCellLabel {
 	float:left;
@@ -121,17 +123,16 @@
 	position:relative;
 }
 .gridHeaderCellSeperator {
+	border-width: 1px 0 0 0;
     cursor: col-resize;
     display: block;
     float: left;
     height:24px;
     margin: 0;
-    padding:0;
-    width: 1px;
-	border-width: 1px 1px 1px 1px;
-	border-style:dashed;
-	z-index:1;
+    padding: 2px 0 0;
+    width: 2px;
 }
+
 .gridSelectAll {
 	float:left;
 	position:relative;
@@ -161,10 +162,11 @@
 .dataGridRowCell{
 	float:left;
 	overflow: hidden; position:relative; 
-	padding:4px 4px 4px 2px;
+	padding:4px 4px 0px 2px;
 	margin:0px 0px 0px 0px;
 	display:block;
 	cursor: default;
+	min-width:33px;
 }
 .inputCtrl {
 	float:left;
@@ -256,20 +258,6 @@
 	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
 	font-size:11px;
 }
-.gridTableFooterEmpty {
-	border-style: dotted;
-    border-width: 0 1px;
-    cursor: pointer;
-    display: block;
-    float: left;
-    height: 18px;
-    margin: 1px 0 0 2px;
-    overflow: hidden;
-    padding: 2px 2px 0;
-    position: relative;
-    text-align: center;
-    width: 18px;
-}
 .ui-row-cell {
 	border-right:1px dotted;	
 }
@@ -309,6 +297,9 @@
     color: #fff;
     font-weight: bold;
 }
+.theme1-header-row .theme1-header-cell{
+	border-right: 1px solid #FFFFFF;
+}
 .theme1-search-hold {
 	border-radius: 5px;
 }
@@ -347,31 +338,211 @@
     padding: 5px 15px;
     margin: 5px 0px;
     border-color: #EB8F00;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     font-size: 14px;
     color: #fff;
     font-weight: bold;
 }
 .theme1-icon {
-	background-image: url("gridIcons.png");
-	background-repeat: no-repeat;
+	background-image: url("images/ui-icons_ffffff_256x240.png");
 }
 .theme1-icon-seek-first {
-	background-position: -45px 6px;
+	background-position: -80px -160px;
 }
 .theme1-icon-seek-prev {
-	background-position: -13px 6px;
+	background-position: -48px -160px;
 }
 .theme1-icon-seek-next {
-	background-position: 3px 6px;
+	background-position: -32px -160px;
 }
 .theme1-icon-seek-end {
-	background-position: -29px 6px;
+	background-position: -64px -160px;
 }
 .theme1-icon-triangle-1-n {
-	background-position: -60px 6px;
+	background-position: 0 -16px;
 }
 .theme1-icon-triangle-1-s {
-	background-position: -72px 6px;
+	background-position: -64px -16px;
 }
+/**** Theme 2 ****/
+.theme2-table-layout {
+	background-color: #FFFFFF;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	border-color: #104E8B;
+    border-width: 1px;
+    border-style: solid;
+}
+.theme2-header-row {
+	display: inline-block;
+    background-color: #1874CD;
+    -webkit-box-shadow: 0px 1px 0px 0px #104E8B, 0px -1px 0px 0px #1874CD inset, 0px 2px 2px 0px #858585; 
+    -moz-box-shadow: 0px 1px 0px 0px #104E8B, 0px -1px 0px 0px #1874CD inset, 0px 2px 2px 0px #858585;
+    box-shadow: 0px 1px 0px 0px #104E8B, 0px -1px 0px 0px #1874CD inset, 0px 2px 2px 0px #858585;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0s 0;
+    -moz-transition: all 0s 0;
+    -o-transition: all 0s 0;
+    transition: all 0s 0;
+    text-shadow: 0px -1px 0px #104E8B;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    border-color: #104E8B;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+.theme2-row-odd, .theme2-search-count {
+	background-color: #63B8FF;
+	color: #000000;
+}
+.theme2-row-even {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.theme2-row-hover,.theme2-row-selected {
+	background-color: #1E90FF;
+	color: #FFFFFF;
+}
+.theme2-footer-row {
+	display: inline-block;
+    background-color: #1874CD;
+    -webkit-box-shadow: 0px 1px 0px 0px #104E8B, 0px -1px 0px 0px #1874CD inset, 0px 2px 2px 0px #858585; 
+    -moz-box-shadow: 0px 1px 0px 0px #104E8B, 0px -1px 0px 0px #1874CD inset, 0px 2px 2px 0px #858585;
+    box-shadow: 0px 1px 0px 0px #104E8B, 0px -1px 0px 0px #1874CD inset, 0px 2px 2px 0px #858585;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0s 0;
+    -moz-transition: all 0s 0;
+    -o-transition: all 0s 0;
+    transition: all 0s 0;
+    text-shadow: 0px -1px 0px #104E8B;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    border-color: #104E8B;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+.theme2-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.theme2-icon-seek-first {
+	background-position: -80px -160px;
+}
+.theme2-icon-seek-prev {
+	background-position: -48px -160px;
+}
+.theme2-icon-seek-next {
+	background-position: -32px -160px;
+}
+.theme2-icon-seek-end {
+	background-position: -64px -160px;
+}
+.theme2-icon-triangle-1-n {
+	background-position: 0 -16px;
+}
+.theme2-icon-triangle-1-s {
+	background-position: -64px -16px;
+}
+/**** Theme 2 ****/
+.theme3-table-layout {
+	background-color: #FFFFFF;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+	border-color: #548B54;
+    border-width: 1px;
+    border-style: solid;
+}
+.theme3-header-row {
+	display: inline-block;
+    background-color: #7CCD7C;
+    -webkit-box-shadow: 0px 1px 0px 0px #548B54, 0px -1px 0px 0px #7CCD7C inset, 0px 2px 2px 0px #858585; 
+    -moz-box-shadow: 0px 1px 0px 0px #548B54, 0px -1px 0px 0px #7CCD7C inset, 0px 2px 2px 0px #858585;
+    box-shadow: 0px 1px 0px 0px #548B54, 0px -1px 0px 0px #7CCD7C inset, 0px 2px 2px 0px #858585;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0s 0;
+    -moz-transition: all 0s 0;
+    -o-transition: all 0s 0;
+    transition: all 0s 0;
+    text-shadow: 0px -1px 0px #548B54;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    border-color: #104E8B;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+.theme3-row-odd, .theme3-search-count {
+	background-color: #9AFF9A; 
+	color: #000000;
+}
+.theme3-row-even {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.theme3-row-hover,.theme3-row-selected {
+	background-color: #90EE90;
+	color: #000000;
+}
+.theme3-footer-row {
+	display: inline-block;
+    background-color: #7CCD7C;
+    -webkit-box-shadow: 0px 1px 0px 0px #548B54, 0px -1px 0px 0px #7CCD7C inset, 0px 2px 2px 0px #858585; 
+    -moz-box-shadow: 0px 1px 0px 0px #548B54, 0px -1px 0px 0px #7CCD7C inset, 0px 2px 2px 0px #858585;
+    box-shadow: 0px 1px 0px 0px #548B54, 0px -1px 0px 0px #7CCD7C inset, 0px 2px 2px 0px #858585;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0s 0;
+    -moz-transition: all 0s 0;
+    -o-transition: all 0s 0;
+    transition: all 0s 0;
+    text-shadow: 0px -1px 0px #548B54;
+    padding: 5px 15px;
+    margin: 5px 0px;
+    border-color: #548B54;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+.theme3-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.theme3-icon-seek-first {
+	background-position: -80px -160px;
+}
+.theme3-icon-seek-prev {
+	background-position: -48px -160px;
+}
+.theme3-icon-seek-next {
+	background-position: -32px -160px;
+}
+.theme3-icon-seek-end {
+	background-position: -64px -160px;
+}
+.theme3-icon-triangle-1-n {
+	background-position: 0 -16px;
+}
+.theme3-icon-triangle-1-s {
+	background-position: -64px -16px;
+}
+
+
+
